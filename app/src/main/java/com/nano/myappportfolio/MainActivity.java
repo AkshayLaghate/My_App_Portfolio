@@ -40,29 +40,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-        switch (v.getId()){
+       displayToast(v);
 
-            case R.id.bSpotify:
-                Toast.makeText(this,"This button will launch my Spotify Streamer app!",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.bScores:
-                Toast.makeText(this,"This button will launch my Scores app!",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.bLibrary:
-                Toast.makeText(this,"This button will launch my Library app!",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.bBuilditBigger:
-                Toast.makeText(this,"This button will launch my Build it Bigger app!",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.bXYZ:
-                Toast.makeText(this,"This button will launch my XYZ Reader app!",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.bCapstone:
-                Toast.makeText(this,"This button will launch my Capstone app!",Toast.LENGTH_SHORT).show();
-                break;
-            default:
-                break;
-        }
+
+    }
+
+    public void displayToast(View v){
+
+        Button b = (Button) v;
+
+        Toast.makeText(this,"This button will launch my "+b.getText()+" app!",Toast.LENGTH_SHORT).show();
 
 
     }
