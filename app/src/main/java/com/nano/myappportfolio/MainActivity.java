@@ -1,6 +1,5 @@
 package com.nano.myappportfolio;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -12,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
 
-    private Button bSpotify,bScores,bLibrary,bBuild,bXYZ,bCapstone;
+    private Button bSpotify, bScores, bLibrary, bBuild, bXYZ, bCapstone;
 
 
     @Override
@@ -40,16 +39,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
 
-       displayToast(v);
+        displayToast(v);
 
 
     }
 
-    public void displayToast(View v){
+    public void displayToast(View v) {
 
         Button b = (Button) v;
 
-        Toast.makeText(this,"This button will launch my "+b.getText()+" app!",Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "This button will launch my " + b.getText() + " app!", Toast.LENGTH_SHORT).show();
 
 
     }
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast.makeText(this,"This does nothing! yet",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "This does nothing! yet", Toast.LENGTH_SHORT).show();
             return true;
         }
 
